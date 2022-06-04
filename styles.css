@@ -139,11 +139,6 @@ h1 {
   color: #505f79;
 }
 
-body {
-  width: 375px;
-  height: 4928px;
-}
-
 #projects-section {
   padding: 0 22px 0 26px;
   border: 1px solid #ebf0ee;
@@ -296,7 +291,7 @@ button:hover {
   align-items: center;
   padding: 1px;
   gap: 24px;
-  width: 327px;
+  margin: 5px;
   height: 352px;
   flex: none;
   order: 1;
