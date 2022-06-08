@@ -252,24 +252,28 @@
   </section>
   <!--Contact Form Section-->
   <section class="form-text">
-<h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-  </section>
-  <div class="form">
-    <form>
-      <ul class="form-input">
-        <li>
-          <input class="textname" type="text" id="name" name="user_name" placeholder="Full name">
-        </li>
-        <li>
-          <input type="email" id="mail" name="user_email" placeholder="Email Address">
-        </li>
-        <li id="meso">
-          <textarea id="msg" name="user_message" placeholder="Enter text here"></textarea>
-        </li>
-        </ul>
-      <button type="button" id="button">Get In Touch </button>
-    </form>
-  </div>
+    <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+      </section>
+      <div class="form">
+        <form id="contact-form" action="https://formspree.io/f/xjvlzylv" method="post">
+          <ul class="form-input">
+            <li>
+              <input type="text" id="name" placeholder="Full name" maxlength="30" required/>
+            </li>
+            <li>
+              <input type="email" id="mail" placeholder="Email Address" required/>
+            </li>
+            <li id="meso">
+              <textarea name="message" id="msg" maxlength="500" placeholder="Enter text here" required></textarea>
+            </li>
+            </ul>
+            <div id="Error-messages">
+              <small id="email-error"></small>
+               </div>
+          <button type="submit" id="button" autofocus>Get In Touch </button>
+        </form>
+      </div>
+  
   <!--Contact Links-->
   <div id="social-media-links">
     <ul id="contact-links2">
