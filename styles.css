@@ -68,6 +68,13 @@ main {
   width: 100%;
 }
 
+#contact-email a {
+  text-align: center;
+  margin: 1.5rem 0;
+  text-decoration: none;
+  margin-left: 100px;
+}
+
 #menu-items li a {
   font-size: 32px;
   font-weight: 600;
@@ -181,6 +188,11 @@ h1 {
   width: 100%;
   padding: 16px 11px 29px;
   justify-content: space-between;
+}
+
+li {
+  gap: 24px;
+  padding-bottom: 30px;
 }
 
 .languages-list li {
@@ -338,6 +350,10 @@ button:hover {
   justify-content: center;
 }
 
+.form-input li {
+  margin-top: 30px;
+}
+
 #typed li {
   list-style: none;
   border-radius: 8px;
@@ -397,4 +413,111 @@ button:hover {
   padding: 0 8px;
   align-items: center;
   justify-content: center;
+}
+
+.form-text {
+  width: 330px;
+  height: 189px;
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  padding-right: 24px;
+  padding-left: 40px;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #42526e;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-weight: 700;
+}
+
+/* #name {
+  box-sizing: border-box;
+  padding-bottom: 30px;
+position: initial;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+background: #FFFFFF;
+border: 1px solid #D0D9D4;
+border-radius: 4px;
+}
+
+#mail {
+  box-sizing: border-box;
+position: initial;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+background: #FFFFFF;
+border: 1px solid #D0D9D4;
+border-radius: 4px;
+padding-bottom: 30px;
+} */
+
+#msg {
+  box-sizing: border-box;
+  position: initial;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  padding-bottom: 80px;
+  padding-top: 10px;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form #button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 130px;
+  gap: 10px;
+  width: 129px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.form {
+  margin-top: 256px;
+}
+
+.form-input li input {
+  width: 80%;
+  margin-right: 6%;
+  height: 48px;
+}
+
+#social-media-links #contact-links2 {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 1rem 0;
+  padding-top: 40px;
+  padding-right: 100px;
+  padding-left: 70px;
+}
+
+#contact-email {
+  width: 100%;
+}
+
+#social-media-links #contact-links2 li {
+  margin: 0 0.5rem;
 }
