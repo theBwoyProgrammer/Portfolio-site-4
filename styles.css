@@ -1,5 +1,10 @@
 html {
   font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -20,13 +25,13 @@ main {
   padding: 2rem;
   font-size: 25px;
   font-weight: bolder;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 0;
   left: 0;
   right: 0;
   height: 72px;
+  max-width: 88%;
 }
 
 #logo {
@@ -100,7 +105,7 @@ header nav ul li a {
   background-image: url("./images/bkg.jpg");
   height: 100vh;
   background-size: cover;
-  width: 100%;
+  max-width: 88%;
 }
 
 h1 {
@@ -128,6 +133,8 @@ h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  gap: 20px;
+  padding: 0 29%;
 }
 
 #contact-links {
@@ -146,6 +153,7 @@ h1 {
 #projects-section {
   padding: 0 22px 0 26px;
   border: 1px solid #ebf0ee;
+  max-width: 88%;
 }
 
 #projects {
@@ -239,6 +247,11 @@ button:hover {
   flex-grow: 0;
 }
 
+#introduction {
+  margin-top: 400px;
+  justify-content: center;
+}
+
 #line {
   width: 80%;
   height: 4px;
@@ -281,7 +294,7 @@ button:hover {
 }
 
 .about-me {
-  width: 100%;
+  max-width: 88%;
   position: relative;
 }
 
@@ -289,14 +302,12 @@ button:hover {
   position: absolute;
   right: 0;
   top: 0;
-  opacity: 0.5;
 }
 
 .left-image {
   position: absolute;
   bottom: 0;
   left: 0;
-  opacity: 0.5;
 }
 
 .cards {
@@ -418,7 +429,7 @@ button:hover {
 }
 
 .form-text {
-  width: 100%;
+  max-width: 80%;
   height: 189px;
   font-family: inter, Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -511,6 +522,11 @@ ul {
 @media only screen and (min-width: 768px) {
   html {
     font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   body {
@@ -545,6 +561,11 @@ ul {
 
   #contact-email {
     display: none;
+  }
+
+  .about-me {
+    max-width: 88%;
+    position: relative;
   }
 
   #projects {
@@ -591,7 +612,7 @@ ul {
   }
 
   .form-text {
-    width: 30%;
+    max-width: 40%;
     height: 189px;
     font-family: inter, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -627,11 +648,11 @@ ul {
     margin-bottom: 237px;
     margin-left: 5%;
     background-image: url(/images/lastdude.png);
-    background-position: 40px 20px;
+    background-position: 10px 20px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 30px 40px;
     height: fit-content;
-    max-width: 14040px;
+    max-width: 80%;
   }
 
   #headline {
@@ -643,7 +664,7 @@ ul {
     background-image: url("./images/deskimg.jpg");
     height: 100vh;
     background-size: cover;
-    width: 100%;
+    max-width: 80%;
   }
 
   .wrapper #button1 {
@@ -654,8 +675,8 @@ ul {
 
   #contact-form1 {
     display: grid;
-    width: 684px;
-    height: 360px;
+    max-width: 88%;
+    height: 400px;
     gap: 24px;
   }
 
@@ -698,6 +719,7 @@ ul {
 
   #menu-bar {
     display: none;
+    max-width: 80%;
   }
 
   h1 {
@@ -712,6 +734,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 14.2rem;
+    max-width: 80%;
   }
 
   #line {
@@ -722,7 +745,7 @@ ul {
     display: flex;
     align-self: center;
     list-style-type: none;
-    width: 100%;
+    max-width: 80%;
     justify-content: center;
   }
 }
