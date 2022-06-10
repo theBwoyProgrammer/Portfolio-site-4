@@ -462,13 +462,12 @@ ul {
   flex-grow: 0;
 }
 
-.form {
+#contact-form {
   margin-top: 256px;
 }
 
 .form-input li input {
   width: 80%;
-  margin-right: 6%;
   height: 48px;
 }
 
@@ -494,9 +493,21 @@ ul {
   display: none;
 }
 
+#contact-form1 {
+  display: none;
+}
+
+#button1 {
+  display: none;
+}
+
+.last-img {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   body {
-    margin-top: 0;
+    margin: 0;
   }
 
   #navbar ul {
@@ -520,6 +531,10 @@ ul {
     margin: 0 0.5rem;
   }
 
+  #contact-email {
+    display: none;
+  }
+
   #projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -538,31 +553,78 @@ ul {
   }
 
   .form-text {
-    width: 100%;
+    width: 30%;
     height: 189px;
     font-family: inter, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 52px;
     text-align: center;
     color: #42526e;
     flex: none;
     order: 0;
     flex-grow: 0;
-    padding: 15px;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    margin-top: 164px;
+    width: 100%;
+    margin-bottom: 237px;
+    margin-left: 5%;
+  }
+
+  .wrapper #button1 {
+    margin-left: 0;
+    display: block;
+    width: 20%;
+  }
+
+  #contact-form1 {
+    display: grid;
+    width: 684px;
+    height: 360px;
+    gap: 24px;
+  }
+
+  #contact-form {
+    display: none;
+  }
+
+  .names {
+    display: flex;
+    gap: 8%;
+    margin-bottom: 24px;
+    height: 40px;
+  }
+
+  #input1 {
+    width: 19.87rem;
+  }
+
+  #input2 {
+    width: 19.87rem;
   }
 
   #logo {
     display: none;
   }
 
-  /* .menu-3 li {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  #mail1 {
+    margin-bottom: 24px;
+    height: 50px;
+    width: 100%;
+  }
 
-} */
+  #msg1 {
+    width: 684px;
+    margin-top: -4px;
+    height: 114px;
+    margin-bottom: 10px;
+  }
 
   #menu-bar {
     display: none;
@@ -583,5 +645,38 @@ ul {
 
   #line {
     display: none;
+  }
+
+  .last-img {
+    display: block;
+  }
+
+  .last1 {
+    position: absolute;
+    bottom: 34;
+    left: 0;
+  }
+
+  .last2 {
+    justify-content: center;
+    margin-top: 74px;
+    bottom: 23;
+    left: 23;
+  }
+
+  .last3 {
+    position: center;
+    width: 316.16px;
+    height: 450.96px;
+    left: 1529.15px;
+    top: 3277px;
+  }
+
+  #social-media-links {
+    display: flex;
+    align-self: center;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
   }
 }

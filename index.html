@@ -257,10 +257,11 @@
     </div>
   </section>
   <!--Contact Form Section-->
-  <section class="form-text">
+  <section class="wrapper">
+  <div class="form-text">
     <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-      </section>
-      <div class="form">
+  </div>  
+    <div class="form">
         <form id="contact-form" action="https://formspree.io/f/xjvlzylv" method="post">
           <ul class="form-input">
             <li>
@@ -278,7 +279,28 @@
                </div>
           <button type="submit" id="button" autofocus>Get In Touch </button>
         </form>
+
+        <form id="contact-form1" action="https://formspree.io/f/xjvlzylv" method="post">
+          
+            <div class="names">
+              <input type="text" id="input1" placeholder="First name" maxlength="30" required/>
+              <input type="text" id="input2" placeholder="Last name" maxlength="30" required/>
+          </div>
+              <input type="email" id="mail1" placeholder="Email Address" required/>
+              <textarea name="message" id="msg1" maxlength="500" placeholder="Enter text here" required></textarea>
+            <div id="Error-messages1">
+              <small id="email-error1"></small>
+               </div>
+          <button type="submit" id="button1">Get In Touch </button>
+        </form>
+        <div class="last-img">
+        <img class="last1" src="/images/last1.jpg" alt="pic">
+        <img class="last2" src="/images/last2.jpg" alt="pic">
+        <img class="last3" src="/images/last3.jpg" alt="pic">
       </div>
+      </div>
+    </section>
+    
   
   <!--Contact Links-->
   <div id="social-media-links">
