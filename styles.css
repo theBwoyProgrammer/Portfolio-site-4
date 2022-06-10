@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 
 main {
   width: 100%;
@@ -102,7 +105,6 @@ header nav ul li a {
 
 h1 {
   color: #172b4d;
-  line-height: 2.7rem;
   font-weight: bolder;
   font-size: 40px;
 }
@@ -155,12 +157,13 @@ h1 {
 
 .project-cards {
   border: 1px solid #ebf0ee;
-  width: 100%;
-  height: 474px;
+  width: auto;
+  height: auto;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .placeholder {
@@ -249,7 +252,7 @@ button:hover {
 #about-header {
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 52px;
   letter-spacing: 0.3px;
   color: #172b4d;
@@ -271,6 +274,10 @@ button:hover {
   order: 1;
   flex-grow: 0;
   padding: 15px;
+}
+
+.hide {
+  display: none;
 }
 
 .about-me {
@@ -501,13 +508,14 @@ ul {
   display: none;
 }
 
-.last-img {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
   body {
     margin: 0;
+    font-size: 1.6rem;
   }
 
   #navbar ul {
@@ -527,6 +535,10 @@ ul {
     color: #344563;
   }
 
+  #contact-links {
+    width: 50%;
+  }
+
   #social-media-links #contact-links2 li {
     margin: 0 0.5rem;
   }
@@ -537,19 +549,45 @@ ul {
 
   #projects {
     display: grid;
+    gap: 3.2rem 2.4rem;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 14.2rem;
+  }
+
+  .project-cards {
+    border: 1px solid #ebf0ee;
+  }
+
+  .right-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .left-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   #about-header {
     text-transform: capitalize;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
     letter-spacing: 0.3px;
-    color: #172b4d;
-    margin-bottom: 2rem;
-    padding-left: 55px;
-    text-align: center;
+    margin: 0;
+    padding: 19.2rem 49.6rem 2.4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #about-text {
+    max-width: 92rem;
+    min-height: 9.6rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 26rem;
+    margin: 0;
   }
 
   .form-text {
@@ -567,6 +605,19 @@ ul {
     flex-grow: 0;
   }
 
+  .hide {
+    display: block;
+  }
+
+  .svg-img {
+    position: absolute;
+    z-index: -1;
+    min-width: 149rem;
+    max-height: min-content;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .wrapper {
     display: flex;
     gap: 24px;
@@ -575,6 +626,24 @@ ul {
     width: 100%;
     margin-bottom: 237px;
     margin-left: 5%;
+    background-image: url(/images/lastdude.png);
+    background-position: 40px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    max-width: 14040px;
+  }
+
+  #headline {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-image: url("./images/deskimg.jpg");
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
   }
 
   .wrapper #button1 {
@@ -599,14 +668,15 @@ ul {
     gap: 8%;
     margin-bottom: 24px;
     height: 40px;
+    width: 100%;
   }
 
   #input1 {
-    width: 19.87rem;
+    width: 50%;
   }
 
   #input2 {
-    width: 19.87rem;
+    width: 50%;
   }
 
   #logo {
@@ -641,35 +711,11 @@ ul {
   #stack-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 14.2rem;
   }
 
   #line {
     display: none;
-  }
-
-  .last-img {
-    display: block;
-  }
-
-  .last1 {
-    position: absolute;
-    bottom: 34;
-    left: 0;
-  }
-
-  .last2 {
-    justify-content: center;
-    margin-top: 74px;
-    bottom: 23;
-    left: 23;
-  }
-
-  .last3 {
-    position: center;
-    width: 316.16px;
-    height: 450.96px;
-    left: 1529.15px;
-    top: 3277px;
   }
 
   #social-media-links {
