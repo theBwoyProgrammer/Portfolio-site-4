@@ -262,7 +262,8 @@ button:hover {
 }
 
 .about-me {
-  background: url("images/bkg1.png") 100% 0% no-repeat, url("images/bkg2.png") 0% 25% no-repeat;
+  background: url("images/bkg1.png") 100% 0% no-repeat,
+    url("images/bkg2.png") 0% 25% no-repeat;
   max-width: 88%;
   margin: auto;
   display: flex;
@@ -303,7 +304,8 @@ button:hover {
 }
 
 .about {
-  background: url("images/deskabt1.jpg") 100% 0% no-repeat, url("images/deskabt2.jpg") 0% 25% no-repeat;
+  background: url("images/deskabt1.jpg") 100% 0% no-repeat,
+    url("images/deskabt2.jpg") 0% 25% no-repeat;
 }
 
 .cards {
@@ -540,7 +542,7 @@ ul {
 
   .menu-3 li a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -668,6 +670,10 @@ ul {
     margin-left: 0;
     display: block;
     width: 20%;
+    transition: width 2s;
+  }
+  .wrapper #button1:hover {
+    width: 300px;
   }
 
   #contact-form1 {
