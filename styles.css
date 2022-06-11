@@ -648,11 +648,10 @@ ul {
     margin-bottom: 237px;
     margin-left: 5%;
     background-image: url(/images/lastdude.png);
-    background-position: 10px 20px;
+    height: 100vh;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 30px 40px;
-    height: fit-content;
-    max-width: 80%;
+    max-width: 120%;
   }
 
   #headline {
