@@ -299,12 +299,14 @@ button:hover {
 }
 
 .right-image {
+  background-image: url("images/bkg1.png");
   position: absolute;
   right: 0;
   top: 0;
 }
 
 .left-image {
+  background-image: url("images/bkg2.png");
   position: absolute;
   bottom: 0;
   left: 0;
@@ -583,12 +585,14 @@ ul {
     position: absolute;
     right: 0;
     top: 0;
+    max-width: 80%;
   }
 
   .left-image {
     position: absolute;
     bottom: 0;
     left: 0;
+    max-width: 80%;
   }
 
   #about-header {
@@ -647,7 +651,7 @@ ul {
     width: 100%;
     margin-bottom: 237px;
     margin-left: 5%;
-    background-image: url(/images/lastdude.png);
+    background-image: url("images/lastdude.png");
     height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
