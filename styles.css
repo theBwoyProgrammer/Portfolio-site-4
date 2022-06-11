@@ -248,7 +248,6 @@ button:hover {
 }
 
 #introduction {
-  margin-top: 400px;
   justify-content: center;
 }
 
@@ -260,6 +259,16 @@ button:hover {
   display: flex;
   margin-left: 110px;
   margin-right: 165px;
+}
+
+.about-me {
+  background: url("images/bkg1.png") 100% 0% no-repeat, url("images/bkg2.png") 0% 25% no-repeat;
+  max-width: 88%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-header {
@@ -293,23 +302,8 @@ button:hover {
   display: none;
 }
 
-.about-me {
-  max-width: 88%;
-  position: relative;
-}
-
-.right-image {
-  background-image: url("images/bkg1.png");
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.left-image {
-  background-image: url("images/bkg2.png");
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.about {
+  background: url("images/deskabt1.jpg") 100% 0% no-repeat, url("images/deskabt2.jpg") 0% 25% no-repeat;
 }
 
 .cards {
