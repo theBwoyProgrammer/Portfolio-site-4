@@ -14,19 +14,24 @@
   <body>
       <!--toolbar section-->
       <main id="header-section">
-        <img src="images/vector.png.png"
-          alt="head-bg"
-          id="headeline-bg"
-        />
-        <header id="page-head">
+      
+        <div id="desk-img">
+          <img src="images/deskimg.jpg" alt="deck" id="desktop-img">
+        </div>
+    
     
           <nav id="navbar">
               <a href="#" id="logo">Welcome</a>
             <a href="#">
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i id="menu-bar" class="fa fa-bars" aria-hidden="true"></i>
             </a>
+            <ul class="menu-3">
+              <li> <a href="#">Portfolio</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
           </nav>
-        </header>
+  
 
         <!--headline section-->
         <section id="headline">
@@ -105,10 +110,11 @@
  <div id="projects-section">
     <section id="intro">
       <h1>My Recent <br>Works</h1>
+    </section>
       <h2 id="line">
         <img src="images/ind.jpg" alt="_">
       </h2>
-    </section>
+    
 <div id="projects">
   <section class="project-cards"> 
     <div class="placeholder"></div>
@@ -181,21 +187,21 @@
 <!--about section-->
 <section id="about">
   <div class="about-me">
-    <img class="right-image" src="/images/bkg1.png" alt="pic">
+    <div class="right-image"></div>
     <h3 id="about-header">About me</h3>
     <p id="about-text">
       I can help you build a product , feature or website Look through some
       of my work and experience! If you like what you see and have a project
       you need coded, don't hestiate to contact me.
     </p>
-    <img class="left-image" src="/images/bkg2.png" alt="pic">
+<div class="left-image"></div>
   </div>
   <div class="about-button">
     <button type="button">Get My Resume</button>
   </div>
  
     <!-- stack item -->
-    <section>
+    <div id="stack-cards">
     <div class="cards">
       <div class="back">
         <img src="./images/ic1.png" alt="languagues" />
@@ -210,10 +216,10 @@
         </ul>
       </div>
     </div>
-    </section>
+    
 
     <!-- stack item -->
-    <section>
+    
       <div class="cards">
         <div class="back">
           <img src="./images/ic2.jpg" alt="languagues" />
@@ -229,10 +235,10 @@
           </ul>
         </div>
       </div>
-      </section>
+      
 
       <!-- stack item -->
-    <section>
+    
       <div class="cards">
         <div class="back">
           <img src="./images/ic3.png" alt="languagues" />
@@ -248,13 +254,14 @@
           </ul>
         </div>
       </div>
-      </section>
+    </div>
   </section>
   <!--Contact Form Section-->
-  <section class="form-text">
+  <section class="wrapper">
+     <div class="form-text">
     <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-      </section>
-      <div class="form">
+  </div>  
+    <div class="form">
         <form id="contact-form" action="https://formspree.io/f/xjvlzylv" method="post">
           <ul class="form-input">
             <li>
@@ -272,8 +279,21 @@
                </div>
           <button type="submit" id="button" autofocus>Get In Touch </button>
         </form>
+
+        <form id="contact-form1" action="https://formspree.io/f/xjvlzylv" method="post">
+            <div class="names">
+              <input type="text" id="input1" placeholder="First name" maxlength="30" required/>
+              <input type="text" id="input2" placeholder="Last name" maxlength="30" required/>
+          </div>
+              <input type="email" id="mail1" placeholder="Email Address" required/>
+              <textarea name="message" id="msg1" maxlength="500" placeholder="Typing something" required></textarea>
+            <div id="Error-messages1">
+              <small id="email-error1"></small>
+               </div>
+          <button type="submit" id="button1">Get In Touch </button>
+        </form>
       </div>
-  
+    </section>
   <!--Contact Links-->
   <div id="social-media-links">
     <ul id="contact-links2">
@@ -286,49 +306,29 @@
           <i class="fab fa-twitter-square"></i
         ></a>
       </li>
-
       <li class="contact-link">
         <a
           href="www.linkedin.com/in/hatimdev"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-linkedin"></i
-        ></a>
+          rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i></a>
       </li>
-
       <li class="contact-link">
-        <a
-          href="https://github.com/HatimDev-HE"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/HatimDev-HE" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github-square"></i>
         </a>
       </li>
-
       <li class="contact-link">
-        <a
-          href="https://medium.com/@HatimDev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-medium"></i
-        ></a>
+        <a href="https://medium.com/@HatimDev" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-medium"></i></a>
       </li>
-
       <li class="contact-link">
-        <a
-          href="https://github.com/HatimDev-HE"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/HatimDev-HE" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-angellist"></i>
         </a>
       </li>
     </ul>
   </div>
-
   <div id="contact-email">
     <a href="#" target="_blank" rel="noopener noreferrer">
       hatimeddinani@gmail.com
