@@ -126,7 +126,23 @@ h1 {
 }
 
 #colored {
-  color: #1d6249;
+  color: #1d6249; 
+}
+
+#line1 {
+animation: slide-out infinite 2s alternate;
+  }
+  
+  @keyframes slide-out {
+    from {
+      margin-right: 30%;
+      width: 88%;
+    }
+  
+    to {
+      margin-left: -20%;
+      width: 88%;
+    }
 }
 
 .social-media {
@@ -549,9 +565,11 @@ ul {
     color: #344563;
   }
 
+
   #contact-links {
     width: 50%;
   }
+  
 
   #social-media-links #contact-links2 li {
     margin: 0 0.5rem;
@@ -565,6 +583,8 @@ ul {
     max-width: 88%;
     position: relative;
   }
+
+  
 
   #projects {
     display: grid;
@@ -664,6 +684,14 @@ ul {
     height: 100vh;
     background-size: cover;
     max-width: 80%;
+  }
+
+  button {
+    transition: width 3s;
+  }
+
+  button:hover {
+    width: 300px;
   }
 
   .wrapper #button1 {
