@@ -32,6 +32,7 @@ main {
   right: 0;
   height: 72px;
   max-width: 88%;
+  align-items: center;
 }
 
 #logo {
@@ -229,7 +230,7 @@ li {
   height: 32px;
 }
 
-button {
+button:not(#menu-bar) {
   color: white;
   background-color: #1d7c59;
   padding: 0.8rem;
@@ -239,6 +240,11 @@ button {
   border: none;
   text-align: center;
   cursor: pointer;
+}
+
+#menu-bar {
+  border: none;
+  background-color: rgba(255, 255, 255, 1)
 }
 
 button:hover {
@@ -550,6 +556,8 @@ ul {
     font-size: 1.6rem;
   }
 
+  
+
   #navbar ul {
     display: flex;
     margin-right: 41.3%;
@@ -696,7 +704,7 @@ ul {
     margin-left: 0;
     display: block;
     width: 20%;
-    transition: width 2s;
+    transition: 0.5s;
   }
 
   .wrapper #button1:hover {
@@ -749,7 +757,6 @@ ul {
 
   #menu-bar {
     display: none;
-    max-width: 80%;
   }
 
   h1 {

@@ -9,7 +9,7 @@
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>My Portfolio Project</title>
+    <title>Hatim's Portfolio Page</title>
   </head>
   <body>
       <!--toolbar section-->
@@ -22,9 +22,9 @@
     
           <nav id="navbar">
               <a href="#" id="logo">Welcome</a>
-            <a href="#">
-              <i id="menu-bar" class="fa fa-bars" aria-hidden="true"></i>
-            </a>
+            <button type="button" id="menu-bar">
+              <i  class="fa fa-bars" aria-hidden="true"></i>
+            </button>
             <ul class="menu-3">
               <li> <a href="#">Portfolio</a></li>
               <li><a href="#">About</a></li>
@@ -51,12 +51,8 @@
           <div class="social-media">
             <ul id="contact-links">
               <li class="contact-link">
-                <a
-                  href="https://twitter.com/HatimDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-twitter-square"></i
+                <a href="https://twitter.com/HatimDev" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-twitter-square" alt="twitter link"></i
                 ></a>
               </li>
   
@@ -265,13 +261,13 @@
         <form id="contact-form" action="https://formspree.io/f/xjvlzylv" method="post">
           <ul class="form-input">
             <li>
-              <input type="text" id="name" placeholder="Full name" maxlength="30" required/>
+              <input type="text" id="name" placeholder="Full name" aria-label="full name" maxlength="30" required/>
             </li>
             <li>
-              <input type="email" id="mail" placeholder="Email Address" required/>
+              <input type="email" id="mail" placeholder="Email Address" aria-label="Email address" required/>
             </li>
             <li id="meso">
-              <textarea name="message" id="msg" maxlength="500" placeholder="Enter text here" required></textarea>
+              <textarea name="message" id="msg" maxlength="500" placeholder="Enter text here" aria-label="message field" required></textarea>
             </li>
             </ul>
             <div id="Error-messages">
@@ -282,11 +278,11 @@
 
         <form id="contact-form1" action="https://formspree.io/f/xjvlzylv" method="post">
             <div class="names">
-              <input type="text" id="input1" placeholder="First name" maxlength="30" required/>
-              <input type="text" id="input2" placeholder="Last name" maxlength="30" required/>
+              <input type="text" id="input1" placeholder="First name" aria-label="First name" maxlength="30" required/>
+              <input type="text" id="input2" placeholder="Last name" aria-label="last name" maxlength="30" required/>
           </div>
-              <input type="email" id="mail1" placeholder="Email Address" required/>
-              <textarea name="message" id="msg1" maxlength="500" placeholder="Typing something" required></textarea>
+              <input type="email" id="mail1" placeholder="Email Address" aria-label="email address" required/>
+              <textarea name="message" id="msg1" maxlength="500" placeholder="Typing something" aria-label="message" required></textarea>
             <div id="Error-messages1">
               <small id="email-error1"></small>
                </div>
