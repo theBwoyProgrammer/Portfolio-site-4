@@ -34,6 +34,36 @@ main {
   max-width: 88%;
 }
 
+.ham {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger.active .ham:nth-child(2) {
+  opacity: 0;
+      }
+  
+      .hamburger.active .ham:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+              }
+  
+              .hamburger.active .ham:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+                      }
+  
+
 #logo {
   text-decoration: none;
   color: black;
@@ -41,8 +71,27 @@ main {
 }
 
 .menu-3 {
-  display: none;
+  position: fixed;
+  top: -100%;
+  left: 70px;
+  gap: 0;
+  flex-direction: column;
+  text-align: center;
+  transition: 1s;
+  width: -10%;
+  justify-content: center;
+  margin-right: 200px;
 }
+
+.menu-3 a {
+ text-decoration: none;
+ color: #172b4d;
+}
+
+
+.menu-3.active {
+  top: 50px;
+} 
 
 #menu-items {
   position: absolute;
@@ -558,6 +607,9 @@ ul {
     margin-top: 0;
   }
 
+  .ham {
+    display: none;
+  }
   .menu-3 li a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
