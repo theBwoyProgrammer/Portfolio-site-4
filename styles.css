@@ -65,6 +65,7 @@ main {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  margin-left: 34px;
 }
 
 .menu-3 {
@@ -75,7 +76,7 @@ main {
   flex-direction: column;
   text-align: start;
   transition: 1s;
-  width: 100%;
+  width: 75%;
   justify-content: center;
   margin-right: 200px;
   z-index: 200;
@@ -126,7 +127,7 @@ main {
   text-align: center;
   margin: 1.5rem 0;
   text-decoration: none;
-  margin-left: 100px;
+  margin-left: 190px;
 }
 
 #menu-items li a {
@@ -167,6 +168,7 @@ h1 {
   padding-right: 1rem;
   margin: 0 auto;
   font-size: 20px;
+  margin-left: 34px;
 }
 
 #colored {
@@ -317,8 +319,9 @@ button:hover {
   border-radius: 24px;
   align-items: center;
   display: flex;
-  margin-left: 110px;
+  margin-left: 95px;
   margin-right: 165px;
+  margin-top: 20px;
 }
 
 .about-me {
@@ -490,11 +493,12 @@ button:hover {
 
 .form-text {
   max-width: 80%;
-  height: 189px;
+  margin-bottom: -170px;
   font-family: inter, Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 20px;
   line-height: 52px;
   text-align: center;
   color: #42526e;
@@ -529,7 +533,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 130px;
+  margin-left: 185px;
   gap: 10px;
   width: 129px;
   height: 48px;
@@ -731,7 +735,7 @@ ul {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-image: url("./images/deskimg.jpg");
-    height: 100vh;
+    height: 600vh;
     background-size: cover;
     max-width: 80%;
   }
