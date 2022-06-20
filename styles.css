@@ -44,8 +44,6 @@ main {
   background-color: #000;
 }
 
-
-
 .hamburger {
   display: block;
   cursor: pointer;
@@ -53,16 +51,15 @@ main {
 
 .hamburger.active .ham:nth-child(2) {
   opacity: 0;
-      }
-  
-      .hamburger.active .ham:nth-child(1) {
-          transform: translateY(8px) rotate(45deg);
-              }
-  
-              .hamburger.active .ham:nth-child(3) {
-                  transform: translateY(-8px) rotate(-45deg);
-                      }
-  
+}
+
+.hamburger.active .ham:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .ham:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 #logo {
   text-decoration: none;
@@ -72,26 +69,28 @@ main {
 
 .menu-3 {
   position: fixed;
-  top: -100%;
-  left: 70px;
+  top: 0;
+  left: -100%;
   gap: 0;
   flex-direction: column;
-  text-align: center;
+  text-align: start;
   transition: 1s;
-  width: -10%;
+  width: 100%;
   justify-content: center;
   margin-right: 200px;
+  z-index: 200;
+  background-color: #fff;
+  height: 100%;
 }
 
 .menu-3 a {
- text-decoration: none;
- color: #172b4d;
+  text-decoration: none;
+  color: #172b4d;
 }
 
-
 .menu-3.active {
-  top: 50px;
-} 
+  left: 0%;
+}
 
 #menu-items {
   position: absolute;
@@ -116,10 +115,6 @@ main {
 #close {
   color: #67798e;
   font-size: 19px;
-}
-
-header nav ul li a {
-  display: none;
 }
 
 .popup-buttons button a {
@@ -610,6 +605,11 @@ ul {
   .ham {
     display: none;
   }
+
+  header nav ul li a {
+    display: none;
+  }
+
   .menu-3 li a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
