@@ -47,6 +47,7 @@ main {
 .hamburger {
   display: block;
   cursor: pointer;
+  margin-right: -33px;
 }
 
 .hamburger.active .ham:nth-child(2) {
@@ -69,14 +70,14 @@ main {
 }
 
 .menu-3 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   gap: 0;
   flex-direction: column;
   text-align: start;
   transition: 1s;
-  width: 75%;
+  width: 85%;
   justify-content: center;
   margin-right: 200px;
   z-index: 200;
@@ -614,6 +615,23 @@ ul {
     display: none;
   }
 
+  .menu-3 {
+    position: relative;
+    left: -10%;
+    bottom: -100%;
+    right: 100%;
+    gap: 0;
+    flex-direction: row;
+    text-align: start;
+    transition: 1s;
+    width: 75%;
+    justify-content: center;
+    margin-right: 200px;
+    z-index: 200;
+    background-color: #fff;
+    height: 100%;
+  }
+
   .menu-3 li a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -735,7 +753,7 @@ ul {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-image: url("./images/deskimg.jpg");
-    height: 600vh;
+    height: 1139px;
     background-size: cover;
     max-width: 80%;
   }
