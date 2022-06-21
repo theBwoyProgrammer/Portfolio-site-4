@@ -48,6 +48,7 @@ main {
   display: block;
   cursor: pointer;
   margin-right: -33px;
+  z-index: 300;
 }
 
 .hamburger.active .ham:nth-child(2) {
