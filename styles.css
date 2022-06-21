@@ -47,7 +47,7 @@ main {
 .hamburger {
   display: block;
   cursor: pointer;
-  margin-right: -33px;
+  margin-right: -19px;
   z-index: 300;
 }
 
