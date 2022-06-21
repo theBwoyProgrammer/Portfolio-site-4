@@ -22,17 +22,18 @@
     
           <nav id="navbar">
               <a href="#" id="logo">Welcome</a>
-            <a href="#">
-              <i id="menu-bar" class="fa fa-bars" aria-hidden="true"></i>
-            </a>
+              <div class="hamburger">
+                <span class="ham"></span>
+                <span class="ham"></span>
+                <span class="ham"></span>
+              </div>
+
             <ul class="menu-3">
-              <li> <a href="#">Portfolio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">contact</a></li>
+              <li> <a href="#projects-section" class="port">Portfolio</a></li>
+              <li><a href="#about" class="port">About</a></li>
+              <li><a href="#wrapper" class="port">Contact</a></li>
             </ul>
           </nav>
-  
-
         <!--headline section-->
         <section id="headline">
           <div id="introduction">
@@ -66,8 +67,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-linkedin"></i
-                ></a>
+                  <i class="fab fa-linkedin"></i></a>
               </li>
   
               <li class="contact-link">
@@ -216,10 +216,8 @@
         </ul>
       </div>
     </div>
-    
 
     <!-- stack item -->
-    
       <div class="cards">
         <div class="back">
           <img src="./images/ic2.jpg" alt="languagues" />
@@ -257,7 +255,7 @@
     </div>
   </section>
   <!--Contact Form Section-->
-  <section class="wrapper">
+  <section class="wrapper" id="wrapper">
      <div class="form-text">
     <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
   </div>  
@@ -334,5 +332,6 @@
       hatimeddinani@gmail.com
     </a>
   </div>
+  <script src="mobile.js"></script>
 </body>
 </html>

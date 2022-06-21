@@ -34,14 +34,65 @@ main {
   max-width: 88%;
 }
 
+.ham {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  margin-right: -19px;
+  z-index: 300;
+}
+
+.hamburger.active .ham:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .ham:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .ham:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 #logo {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  margin-left: 34px;
 }
 
 .menu-3 {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  gap: 0;
+  flex-direction: column;
+  text-align: start;
+  transition: 1s;
+  width: 85%;
+  justify-content: center;
+  margin-right: 200px;
+  z-index: 200;
+  background-color: #fff;
+  height: 100%;
+}
+
+.menu-3 a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+.menu-3.active {
+  left: 0%;
 }
 
 #menu-items {
@@ -69,10 +120,6 @@ main {
   font-size: 19px;
 }
 
-header nav ul li a {
-  display: none;
-}
-
 .popup-buttons button a {
   color: white;
   text-decoration: none;
@@ -82,7 +129,7 @@ header nav ul li a {
   text-align: center;
   margin: 1.5rem 0;
   text-decoration: none;
-  margin-left: 100px;
+  margin-left: 190px;
 }
 
 #menu-items li a {
@@ -123,6 +170,7 @@ h1 {
   padding-right: 1rem;
   margin: 0 auto;
   font-size: 20px;
+  margin-left: 34px;
 }
 
 #colored {
@@ -273,8 +321,9 @@ button:hover {
   border-radius: 24px;
   align-items: center;
   display: flex;
-  margin-left: 110px;
+  margin-left: 95px;
   margin-right: 165px;
+  margin-top: 20px;
 }
 
 .about-me {
@@ -446,11 +495,12 @@ button:hover {
 
 .form-text {
   max-width: 80%;
-  height: 189px;
+  margin-bottom: -170px;
   font-family: inter, Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 20px;
   line-height: 52px;
   text-align: center;
   color: #42526e;
@@ -485,7 +535,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 130px;
+  margin-left: 185px;
   gap: 10px;
   width: 129px;
   height: 48px;
@@ -556,6 +606,31 @@ ul {
     width: 17.7%;
     gap: 24px;
     margin-top: 0;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  header nav ul li a {
+    display: none;
+  }
+
+  .menu-3 {
+    position: relative;
+    left: -10%;
+    bottom: -100%;
+    right: 100%;
+    gap: 0;
+    flex-direction: row;
+    text-align: start;
+    transition: 1s;
+    width: 75%;
+    justify-content: center;
+    margin-right: 200px;
+    z-index: 200;
+    background-color: #fff;
+    height: 100%;
   }
 
   .menu-3 li a {
@@ -679,7 +754,7 @@ ul {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-image: url("./images/deskimg.jpg");
-    height: 100vh;
+    height: 1139px;
     background-size: cover;
     max-width: 80%;
   }
