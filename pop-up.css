@@ -120,6 +120,12 @@
     margin-left: 20px;
     border: #344563 solid 2px;
   }
+  
+modal-cards1 {
+    position: absolute;
+    width: 90%;
+    margin-right: 23px;
+  }
 
   
 
