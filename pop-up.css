@@ -78,7 +78,7 @@
 .btn {
   height: 40px;
   align-items: flex-start;
-  width: 143px;
+  width: 40%;
 }
 
 .close {
@@ -116,10 +116,12 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 9000;
+    z-index: 1;
     margin-left: 20px;
     border: #344563 solid 2px;
   }
+
+  
 
   .h2-ul {
     margin-left: 40rem;
@@ -152,9 +154,6 @@
 
   #desksnap {
     display: block;
-    margin-top: 5rem;
-    height: 400px;
-    margin-left: 40rem;
   }
 
   .close {
@@ -172,12 +171,11 @@
   }
 
   .modal-cards h2 {
-    height: 135px;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 37px;
     color: #172b4d;
     flex: none;
     order: 0;
@@ -185,9 +183,12 @@
   }
 
   .modal-btn {
-    margin-top: 0%;
-    padding: 20px;
-    font-size: 20px;
+    
+    margin-left: 320px;
+  left: 23%;
+  bottom: 75%;
+  top: 9%;
+  line-height: 2px;
   }
 
   .modal-list li {
@@ -219,9 +220,11 @@
     padding-left: 0;
   }
 
-  .btn {
+  .p-btn {
+    display: flex;
     height: 40px;
     align-items: flex-start;
     width: 143px;
+    border: red solid 7px;
   }
 }
