@@ -175,10 +175,11 @@ h1 {
 
 #colored {
   color: #1d6249;
+  width: 100%;
 }
 
 #line1 {
-  animation: slide-out infinite 2s alternate;
+  animation: slide-out 3s alternate;
 }
 
 @keyframes slide-out {
@@ -188,7 +189,7 @@ h1 {
   }
 
   to {
-    margin-left: -20%;
+    margin-left: 20%;
     width: 88%;
   }
 }
@@ -633,6 +634,10 @@ ul {
     height: 100%;
   }
 
+  #colored {
+    margin-left: 12px;
+  }
+
   .menu-3 li a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -757,14 +762,6 @@ ul {
     height: 1139px;
     background-size: cover;
     max-width: 80%;
-  }
-
-  button {
-    transition: width 3s;
-  }
-
-  button:hover {
-    width: 300px;
   }
 
   .wrapper #button1 {
