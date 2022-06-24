@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+  /* overflow: scroll; */
+}
+
+.modal-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid rgb(213, 213, 213);
+  width: 70%;
+  margin: 5% 15%;
+  border-radius: 10px;
+}
+
+.modal {
+  display: none;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(162, 162, 162);
+  background-color: rgb(162, 162, 162);
+  float: right;
+  margin: 10px;
+  padding: 0 0 1px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-img {
+  width: 90%;
+  margin: 10px 20px;
+  height: 60%;
+}
+
+.modal-img img {
+  width: 100%;
+  height: 70%;
+}
+
+.modal-title {
+  width: 70%;
+  margin: 15px 20px;
+  font-size: 12px;
+}
+
+.modal-lang {
+  width: 90%;
+  margin: 20px;
+}
+
+.modal-lang ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-lang ul:nth-child(2) {
+  display: none;
+}
+
+.modal-lang ul li {
+  list-style: none;
+  padding: 5px;
+  background-color: rgb(213, 213, 213);
+  color: #000;
+  border: 1px solid rgb(213, 213, 213);
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.modal-lang ul li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+p {
+  margin: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.buttons {
+  margin: 0 20px 20px 20px;
+}
+
+.btn-bg {
+  padding: 10px 20px 35px 20px;
+  background-color: #36b37f;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  height: 25px;
+  font-size: 20px;
+}
+
+.btn-img1 {
+  width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .close {
+    margin-right: 2%;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    position: fixed;
+    height: 100%;
+    margin-top: 0%;
+  }
+
+  .modal-img {
+    width: 96%;
+    margin: 10px 2%;
+    height: 60%;
+  }
+
+  .modal-title {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .modal-lang {
+    display: flex;
+  }
+
+  .modal-lang ul:nth-child(2) {
+    display: flex;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  .buttons {
+    float: right;
+    margin-top: -27%;
+  }
+}
