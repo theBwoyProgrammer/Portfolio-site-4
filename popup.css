@@ -17,15 +17,17 @@ body {
 
 .modal-content {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  height: 836px;
+  top: 0%;
+  bottom: 50%;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: rgb(149, 142, 142)
   border: 1px solid rgb(213, 213, 213);
   width: 70%;
   margin: 5% 15%;
   border-radius: 10px;
+  z-index: 2000;
 }
 
 .modal {
@@ -35,11 +37,15 @@ body {
 .close {
   width: 20px;
   height: 20px;
-  border: 1px solid rgb(162, 162, 162);
-  background-color: rgb(162, 162, 162);
+  
+  font-size: x-large;
   float: right;
-  margin: 10px;
-  padding: 0 0 1px 7px;
+  /* position: ; */
+  
+  right: 20%;
+top: 5.1%;
+  /* margin: 10px; */
+  /* padding: 0 0 1px 7px; */
   border-radius: 5px;
   cursor: pointer;
 }
@@ -47,7 +53,7 @@ body {
 .modal-img {
   width: 90%;
   margin: 10px 20px;
-  height: 60%;
+  /* height: 60%; */
 }
 
 .modal-img img {
@@ -56,7 +62,7 @@ body {
 }
 
 .modal-title {
-  width: 70%;
+  width: auto;
   margin: 15px 20px;
   font-size: 12px;
 }
@@ -93,11 +99,15 @@ body {
 p {
   margin: 20px;
   line-height: 1.5em;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .buttons {
-  margin: 0 20px 20px 20px;
+  
+  display: flex;
+  flex-direction: row;
+  /* margin: 0 20px 20px 20px; */
+  width: auto;
 }
 
 .btn-bg {
@@ -117,24 +127,30 @@ p {
 
 @media screen and (min-width: 768px) {
   .close {
+
     margin-right: 2%;
   }
 
   .modal-content {
+    position: absolute;
     background-color: #fff;
-    position: fixed;
     height: 100%;
     margin-top: 0%;
+    margin-bottom: 2%;
+    z-index: 999;
+    border: aliceblue 2px solid;
   }
 
-  .modal-img {
+  .modal-img img {
     width: 96%;
     margin: 10px 2%;
     height: 60%;
   }
 
+
+
   .modal-title {
-    width: 50%;
+    width: 78%;
     font-size: 20px;
   }
 
@@ -151,6 +167,7 @@ p {
   }
 
   .buttons {
+    width: auto;
     float: right;
     margin-top: -27%;
   }
