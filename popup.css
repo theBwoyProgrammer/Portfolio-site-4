@@ -27,7 +27,6 @@ body {
   transition: top 3s ease-in-out;
 }
 
-
 .modal-content {
   top: 3%;
   bottom: 50%;
@@ -42,7 +41,7 @@ body {
 
 .close {
   width: 20px;
-  height: 20px; 
+  height: 20px;
   font-size: x-large;
   float: right;
   margin: 10px;
@@ -103,7 +102,6 @@ p {
 }
 
 .buttons {
-  
   display: flex;
   flex-direction: row;
   margin: 0 20px 20px 20px;
@@ -127,7 +125,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .close {
-    height: 20px; 
+    height: 20px;
     float: right;
     border-radius: 5px;
     cursor: pointer;
@@ -139,12 +137,14 @@ p {
     background-color: #ebe8e8;
     margin-top: 3%;
     margin-bottom: 2%;
+
     /* border: aliceblue 2px solid; */
   }
 
   .modal-img img {
     width: 100%;
     margin: 10px 2%;
+
     /* height: 60%; */
   }
 
