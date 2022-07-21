@@ -8,40 +8,63 @@
       rel="stylesheet"
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>My Portfolio Project</title>
   </head>
   <body>
+    <main>
       <!--toolbar section-->
-      <main id="header-section">
-      
-        <div id="desk-img">
-          <img src="images/deskimg.jpg" alt="deck" id="desktop-img">
-        </div>
-    
-    
+      <div id="header-section">
+        <img
+          src="./images/headline-bg.svg"
+          alt="headline-bg"
+          id="headeline-bg"
+        />
+        <header id="page-head">
           <nav id="navbar">
-              <a href="#" id="logo">Welcome</a>
-              <div class="hamburger">
-                <span class="ham"></span>
-                <span class="ham"></span>
-                <span class="ham"></span>
+            <div id="nav-top">
+              <div id="header-logo">
+                <a href="#" id="logo">Welcome</a>
               </div>
-
-            <ul class="menu-3">
-              <li> <a href="#projects-section" class="port">Portfolio</a></li>
-              <li><a href="#about" class="port">About</a></li>
-              <li><a href="#wrapper" class="port">Contact</a></li>
+              <div id="nav-links">
+                <a href="#"
+                  ><i class="fa fa-bars" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="menu">
+            <ul id="menu-items">
+              <li id="close-menu">
+                <p id="close"><i class="fa fa-times close-menu" aria-hidden="true"></i></p>
+              </li>
+              <li class="nav-link">
+                <a href="#projects" >Portfolio</a>
+              </li>
+              <li  class="nav-link">
+                <a href="#about">About</a>
+              </li>
+              <li class="nav-link">
+                <a href="#contact-section" >Contact</a>
+              </li>
             </ul>
+          </div>
           </nav>
+        </header>
+
         <!--headline section-->
         <section id="headline">
+          <img
+            src="./images/header-illsutration-mobile@2x.png"
+            alt="headline background for mobile"
+            id="mobile-bg"
+          />
           <div id="introduction">
-            
-              <h1 id="line1"> Hi there. I'm Hatim</h1> <br />
-              <h2 id="colored">I'm a Software Developer</h2>
-            
+            <h1>
+              <span id="line1"> Hi there, I'm</span> <br id="first-break" />
+              <span id="my-name">Hatim</span> <br />
+              <span id="colored">I am a Software Developer</span>
+            </h1>
             <div id="text-section">
               <p id="text">
                 I can help you build a product feature or website. Look through
@@ -50,243 +73,268 @@
               </p>
             </div>
           </div>
-          <div class="social-media">
-            <ul id="contact-links">
-              <li class="contact-link">
-                <a
-                  href="https://twitter.com/HatimDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-twitter-square"></i
-                ></a>
-              </li>
-  
-              <li class="contact-link">
-                <a
-                  href="https://www.linkedin.com/in/hatimdev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-linkedin"></i></a>
-              </li>
-  
-              <li class="contact-link">
-                <a
-                  href="https://github.com/HatimDev-HE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-github-square"></i>
-                </a>
-              </li>
-  
-              <li class="contact-link">
-                <a
-                  href="https://medium.com/@HatimDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-medium"></i
-                ></a>
-              </li>
-  
-              <li class="contact-link">
-                <a
-                  href="https://github.com/HatimDev-HE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-angellist"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="arrow-case">
-            <i class="fas fa-angle-down"></i>
-          </div>
         </section>
-      </main>
+
+        <!--social media section-->
+        <div class="social-media">
+          <ul id="contact-links">
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://twitter.com/HatimDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://www.linkedin.com/in/hatimdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://github.com/HatimDev-HE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
+
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://medium.com/@HatimDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-medium"></i
+              ></a>
+            </li>
+
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://www.linkedin.com/in/hatimdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-angellist"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="arrow-case">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
 
       <!--projects section-->
-
-      <div id="projects-section">
-        <section id="intro">
-          <h1>My Recent <br>Works</h1>
-        </section>
-          <h2 id="line">
-            <img src="images/ind.jpg" alt="_">
-          </h2>
-        
-    <div id="projects" class="workpage">
-        <div class="placeholder"></div>
-         <h2>Multi-Post Stories<br> Gain+Glory</h2>
-        <ul class="languages-list">
-          <li>Ruby on Rails</li>
-          <li>css</li>
-          <li>Javascript</li>
-          <li>html</li>
-        </ul>
-        <button  type="button" class="pro-btn">See Project</button>
-    </div>
-    </div>    
-
-<!--about section-->
-<section id="about">
-  <div class="about-me">
-    <div class="right-image"></div>
-    <h3 id="about-header">About me</h3>
-    <p id="about-text">
-      I can help you build a product , feature or website Look through some
-      of my work and experience! If you like what you see and have a project
-      you need coded, don't hestiate to contact me.
-    </p>
-<div class="left-image"></div>
-  </div>
-  <div class="about-button">
-    <button type="button">Get My Resume</button>
-  </div>
- 
-    <!-- stack item -->
-    <div id="stack-cards">
-    <div class="cards">
-      <div class="back">
-        <img src="./images/ic1.png" alt="languagues" />
-      </div>
-      <div class="text">
-        <h4 class="title">Languages</h4>
-        <ul class="traplay">
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Html</li>
-          <li>css</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- stack item -->
-      <div class="cards">
-        <div class="back">
-          <img src="./images/ic2.jpg" alt="languagues" />
+      <section id="projects">
+        <div id="projects-heading">
+          <h2 id="projects-h2">My Recent <br id="break" />Works</h2>
         </div>
-        <div class="text">
-          <h4 class="title">Frameworks</h4>
-          <ul class="traplay">
-            <li>Bootstrap</li>
-            <li class="roll">Ruby on rails</li>
-            <li>RSpec</li>
-            <li>Capybara</li>
-            <li>Selenium</li>
-          </ul>
+        <div id="horizontal-rule">
+          <hr id="rule"/>
         </div>
-      </div>
-      
+        <div id="projects-container">
+        </div>
+      </section>
 
-      <!-- stack item -->
-    
-      <div class="cards">
-        <div class="back">
-          <img src="./images/ic3.png" alt="languagues" />
+      <!--about section-->
+      <section id="about">
+        <div id="about-background-images">
+          <img
+            src="./images/about-bg-left.svg"
+            alt="background-image"
+            id="about-background-image-1"
+          />
+          <img
+            src="./images/about-bg-right.svg"
+            alt="background-image"
+            id="about-background-image-2"
+          />
         </div>
-        <div class="text">
-          <h4 class="title">Skills</h4>
-          <ul class="traplay">
-            <li>Codekit</li>
-            <li>GitHub</li>
-            <li>Codepen</li>
-            <li>Gitlab</li>
-            <li>Terminal</li>
-          </ul>
+        <h3 id="about-header">about me</h3>
+        <p id="about-text">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <div class="about-button">
+          <button type="button"><a href="https://github.com/HatimDev-HE">Chek my work</a></button>
         </div>
-      </div>
-    </div>
-  </section>
-  <!--Contact Form Section-->
-  <section class="wrapper" id="wrapper">
-     <div class="form-text">
-    <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-  </div>  
-    <div class="form">
-        <form id="contact-form" action="https://formspree.io/f/xjvlzylv" method="POST">
-          <ul class="form-input">
-            <li>
-              <input type="text" name="fullname" id="name" placeholder="Full name" maxlength="30" required/>
-            </li>
-            <li>
-              <input type="email" name="emailaddress" id="mail" placeholder="Email Address" required/>
-            </li>
-            <li id="meso">
-              <textarea name="message" id="msg" maxlength="500" placeholder="Enter text here" required></textarea>
-            </li>
-            </ul>
+
+        <div id="stack-list">
+          <!-- stack item -->
+          <div class="stack-item">
+            <i><img src="./images/Icon-Langguage.png" alt="languagues" /></i>
+            <div class="stack-text">
+              <h4 class="stack-title">Languages</h4>
+              <ul class="stack-list" id="language-list">
+                <li class="language">Javascript</li>
+                <li class="language">Ruby</li>
+                <li class="language">Html</li>
+                <li class="language">CSS</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- stack item -->
+          <div class="stack-item">
+            <i><img src="./images/Icon-Name.png" alt="frameworks" /></i>
+            <div class="stack-text">
+              <h4 class="stack-title">Frameworks</h4>
+              <ul class="stack-list" id="framework-list">
+                <li class="framework">Bootstrap</li>
+                <li class="framework">Ruby on rails</li>
+                <li class="framework">RSpec</li>
+                <li class="framework">Copybars</li>
+                <li class="framework">Selenium</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- stack item -->
+          <div class="stack-item">
+            <i><img src="./images/Icon-Name-(1).png" alt="skill" /></i>
+            <div class="stack-text">
+              <h4 class="stack-title">Skills</h4>
+              <ul class="stack-list" id="skill-list">
+                <li class="skill">Codekit</li>
+                <li class="skill">GitHub</li>
+                <li class="skill">Codepen</li>
+                <li class="skill">Gitlab</li>
+                <li class="skill">Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact-section">
+        <div id="top">
+          <div id="background-img">
+            <img
+              src="./images/contact-background.svg"
+              alt="contact-background"
+            />
+          </div>
+          <img
+            src="./images/contact-section-bg.svg"
+            alt="contact-background"
+            id="contact-desktop-bg"
+          />
+          <img
+            src="./images/contact-bg-left.svg"
+            alt="contact-bg-left"
+            id="contact-bg-left"
+          />
+          <img
+            src="./images/contact-bg-rightt.svg"
+            alt="contact-bg-right"
+            id="contact-bg-rightt"
+          />
+          <h3>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h3>
+          <form action="https://formspree.io/f/xknydzpb" method="POST" id="contact-form">
+            <fieldset>
+              <input type="text" id="name" placeholder="Full Name"
+                maxlength="30"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="10"
+                rows="10"
+                maxlength="500"
+                placeholder="Enter Text Here"
+                required
+              ></textarea>
+            </fieldset>
             <div id="Error-messages">
               <small id="email-error"></small>
                </div>
-          <button type="submit" id="button" autofocus>Get In Touch </button>
-        </form>
+            <button type="submit" id="button" autofocus>Get In Touch</button>
+          </form>
+        </div>
 
-        <form id="contact-form1" action="https://formspree.io/f/xjvlzylv" method="post">
-            <div class="names">
-              <input type="text" name="firstname" id="input1" placeholder="First name" maxlength="30" required/>
-              <input type="text" name="lastname" id="input2" placeholder="Last name" maxlength="30" required/>
-          </div>
-              <input type="email" name="emailaddress" id="mail1" placeholder="Email Address" required/>
-              <textarea name="message" id="msg1" maxlength="500" placeholder="Typing something" required></textarea>
-            <div id="Error-messages1">
-              <small id="email-error1"></small>
-               </div>
-          <button type="submit" id="button1">Get In Touch </button>
-        </form>
-      </div>
-    </section>
-  <!--Contact Links-->
-  <div id="social-media-links">
-    <ul id="contact-links2">
-      <li class="contact-link">
-        <a
-          href="https://twitter.com/HatimDev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fab fa-twitter-square"></i
-        ></a>
-      </li>
-      <li class="contact-link">
-        <a
-          href="www.linkedin.com/in/hatimdev"
-          target="_blank"
-          rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i></a>
-      </li>
-      <li class="contact-link">
-        <a href="https://github.com/HatimDev-HE" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github-square"></i>
-        </a>
-      </li>
-      <li class="contact-link">
-        <a href="https://medium.com/@HatimDev" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-medium"></i></a>
-      </li>
-      <li class="contact-link">
-        <a href="https://github.com/HatimDev-HE" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-angellist"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="contact-email">
-    <a href="#" target="_blank" rel="noopener noreferrer">
-      hatimeddinani@gmail.com
-    </a>
-  </div>
+        <div id="social-media-links">
+          <ul id="contact-links2">
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://twitter.com/HatimDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
 
-  <!-- my pop up modal section  -->
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://www.linkedin.com/in/hatimdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin"></i
+              ></a>
+            </li>
 
-  <section class="modal" id="modal-cards"> 
-  </section>
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://github.com/HatimDev-HE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+            </li>
 
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://medium.com/@HatimDev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-medium"></i
+              ></a>
+            </li>
 
-  <script src="./JS-files/mobile.js"></script>
-  <script src="./JS-files/modal.js"></script>
-</body>
+            <li class="contact-link" id="rotate">
+              <a
+                href="https://www.linkedin.com/in/hatimdev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-angellist"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contact-email">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            hatimeddinani@gmail.com
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="./portfolio.js"></script>
+  </body>
 </html>
