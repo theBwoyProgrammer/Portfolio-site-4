@@ -142,6 +142,7 @@
         <div id="horizontal-rule">
           <hr id="rule"/>
         </div>
+
         <div id="projects-container">
         </div>
       </section>
@@ -267,6 +268,28 @@
                 required
               ></textarea>
             </fieldset>
+      </div>
+    </div>
+  </section>
+  <!--Contact Form Section-->
+  <section class="wrapper" id="wrapper">
+     <div class="form-text">
+    <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+  </div>  
+    <div class="form">
+        <form id="contact-form" action="https://formspree.io/f/xknydzpb" method="POST" class'run'>
+          <ul class="form-input">
+            <li>
+              <input type="text" name="fullname" id="name" placeholder="Full name" maxlength="30" required/>
+            </li>
+            <li>
+              <input type="email" name="emailaddress" id="mail" placeholder="Email Address" required/>
+            </li>
+            <li id="meso">
+              <textarea name="message" id="msg" maxlength="500" placeholder="Enter text here" required></textarea>
+            </li>
+            </ul>
+
             <div id="Error-messages">
               <small id="email-error"></small>
                </div>
