@@ -45,14 +45,14 @@
     display: none;
   }
 
-  .popup-buttons button a {
-    color: white;
-    text-decoration: none;
-  }
-
   .about-button a {
     text-decoration: none;
     color: white;
+  }
+
+  .popup-buttons button a {
+    color: white;
+    text-decoration: none;
   }
 
   #menu-items li a {
@@ -357,15 +357,22 @@
     margin-left: 1rem;
   }
 
-  #rotate {
+  .rotate {
     transition: transform 0.7s ease-in-out;
   }
 
-  #rotate:hover {
+  .rotate:hover {
     transform: rotate(1000deg);
+  }
+
+  .href {
+    background-color: #1d6249;
+    padding: 16px;
+    border: #1d6249 2px solid;
+    border-radius: 8px;
   }
 
   .errors {
     margin-top: 30px;
-    }
+  }
 }

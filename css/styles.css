@@ -49,7 +49,7 @@ main {
 }
 
 #header-section {
-  width: 920;
+  width: auto;
   height: 80vh;
   margin: 0 auto;
 }
@@ -110,6 +110,11 @@ main {
 #close {
   color: #67798e;
   font-size: 19px;
+}
+
+.about-button a {
+  text-decoration: none;
+  color: white;
 }
 
 .popup-buttons button a {
@@ -192,11 +197,6 @@ h1 {
   justify-content: space-around;
 }
 
-.about-button a {
-  text-decoration: none;
-  color: white;
-}
-
 .contact-link i {
   font-size: 30px;
   color: #505f79;
@@ -274,6 +274,14 @@ hr {
   padding: 0.3rem;
 }
 
+.rotate {
+  transition: transform 0.7s ease-in-out;
+}
+
+.rotate:hover {
+  transform: rotate(1000deg);
+}
+
 .project-title {
   font-size: 1.3em;
   padding: 0.2rem;
@@ -286,7 +294,7 @@ hr {
 }
 
 .errors {
-margin-left: 50px;
+  margin-left: 50px;
 }
 
 .project-langs {
@@ -477,7 +485,7 @@ margin-left: 50px;
   text-align: center;
   color: #172b4d;
   padding: 0 1rem;
-  font-family: 'Inter' Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 fieldset {

@@ -233,12 +233,12 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
 
   const button1 = document.createElement('button');
   button1.type = 'button';
-  button1.innerHTML = '<a href="https://ceemos96.github.io/Portfolio-setup-and-mobile-version-skeleton/" target="_blank"> See Live <i class="fa fa-link" ></i>';
+  button1.innerHTML = '<a href="https://hatimdev-he.github.io/Portfolio-site-4/" target="_blank"> See Live <i class="fa fa-link" ></i>';
   popupButtons.appendChild(button1);
 
   const button2 = document.createElement('button');
   button2.type = 'button';
-  button2.innerHTML = '<a href="https://github.com/Ceemos96/Portfolio-setup-and-mobile-version-skeleton" target="_blank"> See Source  <i class="fab fa-github"></i></a>';
+  button2.innerHTML = '<a href="https://github.com/HatimDev-HE/Portfolio-site-4" target="_blank"> See Source  <i class="fab fa-github"></i></a>';
   popupButtons.appendChild(button2);
 
   popupText.appendChild(popupButtons);
@@ -259,7 +259,7 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
 const email1 = document.getElementById('email');
 const form1 = document.getElementById('contact-form');
 const errorElement1 = document.getElementById('Error-messages');
-errorElement1.setAttribute('class', 'errors')
+errorElement1.setAttribute('class', 'errors');
 function validate() {
   if (email1.value.match(/^[a-z@.0-9-_]*$/)) {
     return true;
