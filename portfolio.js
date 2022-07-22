@@ -258,7 +258,7 @@ for (let i = 0; i < projectsDetails.length; i += 1) {
 
 const email1 = document.getElementById('email');
 const form1 = document.getElementById('contact-form');
-const errorElement1 = document.getElementById('Error-messages');
+const errorElement1 = document.getElementById('error-messages');
 errorElement1.setAttribute('class', 'errors');
 function validate() {
   if (email1.value.match(/^[a-z@.0-9-_]*$/)) {

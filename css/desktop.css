@@ -237,7 +237,11 @@
   }
 
   #contact-section button {
-    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50rem;
+  
   }
 
   #contact-email {
@@ -252,7 +256,6 @@
   }
 
   #contact-links2 {
-    position: absolute;
     bottom: 2%;
     border-top: 1px solid rgb(158, 158, 158);
     width: 100%;
@@ -355,6 +358,10 @@
 
   .popup-buttons button i {
     margin-left: 1rem;
+  }
+
+  #form-button {
+    margin-left: 4rem;
   }
 
   .rotate {
