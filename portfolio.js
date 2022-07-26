@@ -25,7 +25,7 @@ for (let i = 0; i < navLinks.length; i += 1) {
 
 const projectsDetails = [
   {
-    title: 'weather app',
+    title: 'Advice App',
     popup_title: 'Keeping track of hundreds of components',
     featured_image: '#',
     long_description:
@@ -38,7 +38,7 @@ const projectsDetails = [
   },
 
   {
-    title: 'landing page',
+    title: 'Sneaker Shop',
     popup_title: 'Keeping track of hundreds of components',
     featured_image: '#',
     long_description:
@@ -51,7 +51,7 @@ const projectsDetails = [
   },
 
   {
-    title: 'Tribute page',
+    title: 'YouTube Clone',
     popup_title: 'Keeping track of hundreds of components',
     featured_image: '#',
     long_description:
@@ -64,7 +64,7 @@ const projectsDetails = [
   },
 
   {
-    title: 'mobile application',
+    title: 'To Do List App',
     popup_title: 'Keeping track of hundreds of components',
     featured_image: '#',
     long_description:
@@ -77,7 +77,7 @@ const projectsDetails = [
   },
 
   {
-    title: 'e-commerce website',
+    title: 'E-commerce website',
     popup_title: 'Keeping track of hundreds of components',
     featured_image: '#',
     long_description:
@@ -90,7 +90,7 @@ const projectsDetails = [
   },
 
   {
-    title: 'calculator',
+    title: 'Stop Watch',
     popup_title: 'Keeping track of hundreds of components',
     featured_image: '#',
     long_description:
