@@ -45,11 +45,6 @@
     display: none;
   }
 
-  .about-button a {
-    text-decoration: none;
-    color: white;
-  }
-
   .popup-buttons button a {
     color: white;
     text-decoration: none;
@@ -237,11 +232,7 @@
   }
 
   #contact-section button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50rem;
-  
+    margin-top: 2rem;
   }
 
   #contact-email {
@@ -256,6 +247,7 @@
   }
 
   #contact-links2 {
+    position: absolute;
     bottom: 2%;
     border-top: 1px solid rgb(158, 158, 158);
     width: 100%;
@@ -347,6 +339,14 @@
     color: #3a4a42;
   }
 
+  .rotate {
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .rotate:hover {
+    transform: rotate(1000deg);
+  }
+
   .popup-buttons {
     text-align: center;
     margin: 0.3rem 0;
@@ -358,28 +358,5 @@
 
   .popup-buttons button i {
     margin-left: 1rem;
-  }
-
-  #form-button {
-    margin-left: 4rem;
-  }
-
-  .rotate {
-    transition: transform 0.7s ease-in-out;
-  }
-
-  .rotate:hover {
-    transform: rotate(1000deg);
-  }
-
-  .href {
-    background-color: #1d6249;
-    padding: 16px;
-    border: #1d6249 2px solid;
-    border-radius: 8px;
-  }
-
-  .errors {
-    margin-top: 30px;
   }
 }
