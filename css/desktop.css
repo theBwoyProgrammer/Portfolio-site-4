@@ -70,6 +70,13 @@
     width: 60%;
   }
 
+  .typewrite {
+    text-align: center;
+    color: #448f70;
+    padding-top: 30px;
+    text-decoration: none;
+  }
+
   #introduction h1 {
     font-size: 48px;
     line-height: 1.1em;
